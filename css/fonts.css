@@ -1,0 +1,17 @@
+
+
+@font-face {
+    font-family: 'Cooper Black';
+    src: url('../fonts/CooperBlack-Std.otf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    src: url('../fonts/Microsoft-Sans-Serif-Regular-font.ttf');
+    font-weight: 400;
+    font-display: auto;
+    font-style: normal;
+}

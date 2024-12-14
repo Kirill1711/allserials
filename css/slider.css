@@ -1,0 +1,122 @@
+.slider {
+    margin-top: 50px;
+}
+.slider__liner {
+    width: 6000px;
+    height: 470px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease;
+}
+.slider__window {
+    margin: auto;
+    width: 1200px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 1200px;
+    position: relative;
+}
+
+.item__description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    margin-left: 1em;
+}
+.item__description h3 {
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.item__description p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+}
+.slider__item .item__description img {
+    width: 190px;
+    height: 290px;
+}
+
+.slider__video {
+    margin-left: 5em;
+    width: 1100px;
+    height: 450px;
+}
+
+.slider__item a {
+    border: 2px solid red;
+    padding: 5px 1.5em;
+    margin-top: -10px;
+    color: red;
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+}
+.slider__item a:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width:1200px) {
+    .slider__window {
+        width: 1000px;
+    }
+    .slider__item {
+        width: 1000px;
+    }
+    .slider__video{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .slider__window {
+        width: 980px;
+    }
+    .slider__item {
+        width: 980px;
+    }
+    .slider__video{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .slider__window {
+        width: 750px;
+    }
+    .slider__item {
+        width: 750px;
+    }
+    .slider__video{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slider__video {
+        display: none;
+    }
+    .slider__window {
+        width: 300px;
+    }
+    .slider__item {
+        width: 300px;
+        justify-content: center;
+    }
+}

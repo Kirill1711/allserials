@@ -1,0 +1,120 @@
+.autorization {
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    transition: all 0.25s ease;
+}
+.autorization__active {
+    display: block;
+    position: fixed;
+    background-color: #fefefe;
+    top: 0;
+}
+.autorization__wrapper, .autorization__registration, .forgot__pass, .feedback {
+    display: none;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 400;
+    box-shadow: 5px 5px 5px #000;
+}
+.autorization__wrapper h3, .autorization__registration  h3, .forgot__pass h3, .feedback  h3{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    text-align: center;
+    margin-top: 10px;
+}
+.feedback  h3 {
+    margin: 1.5em;
+}
+.autorization__wrapper p, .autorization__registration  p, .forgot__pass p, .feedback  p{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.autorization__wrapper .close, .autorization__registration .close_registration, .forgot__pass .close_forgot, .feedback .close_feedback{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.autorization__wrapper .close img, .autorization__registration .close_registration img, .forgot__pass .close_forgot img, .feedback .close_feedback img{
+    margin: 5px 5px;
+    width: 20px;
+    height: 20px;
+}
+.autorization__wrapper .close:hover, .autorization__registration .close_registration:hover, .forgot__pass .close_forgot:hover, .feedback .close_feedback:fover{
+    opacity: 80%;
+}
+
+.autorization__wrapper form, .autorization__registration form, .forgot__pass form, .feedback  form{
+    border-top: 1px #ffffff solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: column;
+}
+.autorization__wrapper form div:first-child, .autorization__registration form div:first-child, .forgot__pass form div:first-child, .feedback  form div:first-child{
+   margin-top: 20px;
+}
+.autorization__wrapper div button, .autorization__registration div button, .forgot__pass div button, .feedback  div button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    border: 1px solid red;
+    cursor: pointer;
+}
+.autorization__registration div button{
+    width: 200px;
+}
+.forgot__pass div button {
+    width: 220px;
+    height: 50px;
+}
+.autorization__wrapper div button:hover, .autorization__registration div button:hover, .forgot__pass div button:hover{
+    color: red;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.autorization__wrapper div p, .autorization__registration div p, .forgot__passdiv p{
+    font-size: 20px;
+    color: #f26739;
+    font-weight: 500;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    cursor: pointer;
+}
+.autorization__wrapper div p:hover, .autorization__registration div p:hover, .forgot__pass div p:hover{
+    color: #ffffff;
+}
+
+.autorizaton_btn {
+    color: #f26739;
+    cursor: pointer;
+}
+.autorizaton_btn:hover {
+    color: #f8e901;
+}

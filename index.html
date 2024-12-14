@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/tv-show.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/generalstyle.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/autorization.css">
+    <meta content="Сериалы смотреть онлайн">
+    <title>ALL SERIALS</title>
+</head>
+<body>
+    <header>
+
+      
+
+        <div class="container">
+            <nav>
+                <div class="header__logo">
+                    <span>ALL</span>
+                    <img src="./img/header/icons8-tv-50.png" alt="logo">
+                    <span>SERIALS</span>
+                </div><!--header__logo-->
+                <a href="./index.html"><p class="serials header__active">Сериалы</p></a>
+               <p class="header__help">Помощь</p>
+               <button class="testuser">tuser</button>
+               <div class="header__wrapper registred header__registration">
+                   <img src="./img/header/sign-form.png" alt="sign-form">
+                   <span>Регистрация</span>
+               </div>
+               <div class="header__wrapper header__authorization">
+                    <img src="./img/header/icons8-key-48.png" alt="key">
+                    <span>Авторизация</span>
+               </div>
+               
+                <div class="header__mobilemenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            <div class="mobile__menu mobile__menu_hide">
+                <p class="mobile__serials header__active"><a href="./index.html">Сериалы</a></p>
+                <p class="header__help">Помощь</p>
+                <p class="registred">Регистрация</p>
+                <p class="mobile__autorization">Авторизация</p>
+            </div><!--mobile__menu-->    
+
+        </div><!--container-->
+    </header>
+
+    <section class="filter">
+        <div class="container">
+            <div class="filter__wrapper">
+                <div><p>Фильтр</p><img src="./img/header/icons8-filter-48.png" alt="filter"></div>
+                <button class="btn_reset">Сброс</button>
+                <button class="btn_search">Найти</button>
+            </div>
+            <div class="filter__menu menu__hide">
+
+                <div>
+                    <p>Жанр</p>
+                    <ul class="gender">
+                        <li>Боевик</li>
+                        <li>Детектив</li>
+                        <li>Комедия</li>
+                        <li>Исторический</li>
+                        <li>Фэнтази</li>
+                        <li>Ужасы</li>
+                    </ul>
+                </div>
+
+                <span></span>
+
+                <div>
+                    <p>Страна</p>
+                    <ul class="country">
+                        <li>США</li>
+                        <li>Великобритания</li>
+                        <li>Франция</li>
+                        <li>Россия</li>
+                        <li>Турция</li>
+                        <li>Новая Зеландия</li>
+                        <li>Южная Корея</li>
+                    </ul>
+                </div>
+
+                <span></span>
+
+                <div>
+                    <p>Год выпуска</p>
+                    <ul class="year">
+                        <li>2024</li>
+                        <li>2023</li>
+                        <li>2022</li>
+                        <li>2021</li>
+                        <li>2019</li>
+                        <li>2016</li>
+                    </ul>
+                </div>
+
+                <span></span>
+
+                <div>
+                    <p>Рейтинг</p>
+                    <ul class="raiting">
+                        <li>Больше 8</li>
+                        <li>Больше 7</li>
+                        <li>Больше 6</li>
+                        <li>Больше 5</li>
+                        <li>Больше 4</li>
+                        <li>Больше 3</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div><!--container-->
+    </section><!--filter-->
+
+    <div class="autorization">
+        <div class="autorization__wrapper">
+
+            <h3>Авторизация</h3>
+            <p>Введите свои логин пароль<br> для входа в личный кабинет</p>
+
+            <div class="close"><img src="./img/close.png" alt="close"></div>
+            <form method="post" class="form__autorization">
+                <div><input type="text" name="login_name" id="login_name" placeholder="Логин"></div>
+                <div><input type="password" name="login_password" id="password" placeholder="Пароль"></div>
+                <div><button type="submite" id="entersubmite">Войти</button></div>
+                <div class="forgotpass"><p>Забыли пароль?</p></div>
+                <div class="registred"><p>Регистрация</p></div>
+            </form>
+
+        </div><!--autorization__wrapper-->
+
+        <div class="autorization__registration">
+
+            <h3>Регистрация</h3>
+            <p>В случае возникновения проблем с регистрацией,<br> обратитесь к нам через вкладку Помощь.</p>
+
+            <div class="close_registration"><img src="./img/close.png" alt="close"></div>
+            <form method="post" class="form__autorization">
+                <div><input type="text" name="user_login" id="user_login" placeholder="Логин"></div>
+                <div><input type="password" name="user_password" id="user_password" placeholder="Пароль"></div>
+                <div><input type="password" name="user_password" id="user_password_again" placeholder="Повторите пароль"></div>
+                <div><input type="email" name="user_email" id="user_email" placeholder="E-mail адрес"></div>
+                <div><button type="submite" id="registrationsubmite">Зарегистрироваться</button></div>
+            </form>
+
+        </div><!--autorization__registration-->
+
+
+        <div class="forgot__pass">
+
+            <h3>Забыли пароль</h3>
+            <p>Укажите ваш E-mail адрес для<br>
+                восстановления доступа</p>
+
+            <div class="close_forgot"><img src="./img/close.png" alt="close"></div>
+            <form method="post" class="form__autorization">
+                <div><input type="email" name="forgot_email" id="forgot_email" placeholder="E-mail адрес"></div>
+                <div><button type="submite" id="forgotsubmite">Восстановить пароль</button></div>
+                <div><p>Вспомнили? <span class="autorizaton_btn">Авторизироваться</span></p></div>
+            </form>
+
+        </div><!--forgot__pass-->
+
+        <div class="feedback">
+
+            <h3>Форма обратной связи</h3>
+
+            <div class="close_feedback"><img src="./img/close.png" alt="close"></div>
+            <form method="post" class="form__autorization">
+                <div><input type="name" name="feedback_name" id="feedback_name" placeholder="Ваше Имя"></div>
+                <div><input type="email" name="feedback_email" id="feedback_email" placeholder="Ваш E-mail"></div>
+                <div><button type="submite" id="feedback">Отправить</button></div>
+            </form>
+
+        </div><!--feedback-->
+
+    </div><!--autorization-->
+       
+            
+
+     
+
+    <div class="arrowtoTop">
+            <img src="./img/top.png" alt="to top">
+    </div><!--arrowtoTop-->
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider__window">
+                <div class="slider__liner">
+
+                    <div class="slider__item">
+                        <video autoplay loop muted playsinline class="slider__video">
+                        <source src="https://www.film.ru/sites/default/files/trailers/50301124/star-wars-skeleton-crew-season-1-trailer-1.mp4" type="video/mp4">
+                        </video>
+                        <div class="item__description">
+                            <h3>Звёздные Войны: <br> Опорная Команда</h3>
+                            <p>США, 2024 года</p>
+                            <img src="./img/slider/star-wars.png" alt="star-wars">
+                            <p>Рейтинг IMDb 7.7</p>
+                            <a href="./catalog/star-wars.html">Смотреть</a>
+                        </div>
+                    </div><!--slider__item-->
+
+                    <div class="slider__item">
+                        <video autoplay loop muted playsinline class="slider__video">
+                        <source src="https://www.film.ru/sites/default/files/trailers/20949259/halo-season-2-trailer-1.mp4" type="video/mp4">
+                        </video>
+                        <div class="item__description">
+                            <h3>HALO</h3>
+                            <p>США, 2022 года</p>
+                            <img src="./img/slider/halo.png" alt="halo">
+                            <p>Рейтинг IMDb 7.7</p>
+                            <a href="./catalog/halo.html">Смотреть</a>
+                        </div>
+                    </div><!--slider__item-->
+
+
+                    <div class="slider__item">
+                        <video autoplay loop muted playsinline class="slider__video">
+                           <source src="https://www.film.ru/sites/default/files/trailers/50687975/shogun-season-1-trailer-1.mp4" type="video/mp4">
+                        </video>
+                        <div class="item__description">
+                            <h3>Сёгун</h3>
+                            <p>США, 2024 года</p>
+                            <img src="./img/slider/segun.png" alt="segun">
+                            <p>Рейтинг IMDb 8.6</p>
+                            <a href="./catalog/segyn.html">Смотреть</a>
+                        </div>
+                    </div><!--slider__item-->
+
+                    <div class="slider__item">
+                        <video autoplay loop muted playsinline class="slider__video">
+                        <source src="https://www.film.ru/sites/default/files/trailers/49632792/house-of-the-dragon-season-2-trailer-3.mp4" type="video/mp4">
+                        </video>
+                        <div class="item__description">
+                            <h3>Дом дракона</h3>
+                            <p>США, 2022 года</p>
+                            <img src="./img/slider/houseofdragane.png" alt="houseofdragane">
+                            <p>Рейтинг IMDb 8.6</p>
+                            <a href="./catalog/houseofdragane.html">Смотреть</a>
+                        </div>
+                    </div><!--slider__item-->
+
+                    <div class="slider__item">
+                        <video autoplay loop muted playsinline class="slider__video">
+                            <source src="https://www.film.ru/sites/default/files/trailers/50613094/the-walking-dead-the-ones-who-live-season-1-trailer-1.mp4" type="video/mp4">
+                        </video>
+                        <div class="item__description">
+                            <h3>Ходячие мертвецы: <br> Выжившие</h3>
+                            <p>США, 2024 года</p>
+                            <img src="./img/slider/walken-dead.png" alt="walken-dead">
+                            <p>Рейтинг IMDb 7.8</p>
+                            <a href="./catalog/dead.html">Смотреть</a>
+                        </div>
+                    </div><!--slider__item-->
+
+                </div><!--slider__liner-->
+            </div><!--slider__window-->
+        </div><!--container-->
+    </section><!--slider-->
+
+
+    <section class="video">
+        <div class="container">
+            <div class="video__wrapper">
+                <h2>Все сериалы</h2>
+               
+                </div>
+            </div><!--video__wrapper-->
+        </div><!--container-->
+    </section><!--video-->
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__inner">
+                    <div><a href="./index.html"><p>Сериалы</p></a>
+                        <p class="header__help">Помощь</p></div>
+                    <span></span>
+                    <p>2024© Frontend: Ковалёв Кирилл</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+    <script src="./js/headerscript.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/videostore.js"></script>
+    <script src="./js/form-autorization.js"></script>
+    <script src="./js/totop.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.filter{
+    position: relative;
+    z-index: 150;
+}
+.filter__wrapper{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+    height: 50px;
+    padding: 0 1em;
+    transition: all 0.5s ease;
+}
+.filter__wrapper div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.filter__wrapper div:hover p{
+    color: #f8e901;
+}
+.filter__wrapper div img {
+    width: 20px;
+    height: 25px;
+}
+.filter__wrapper p {
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.filter__menu {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 230px;
+    width: 100%;
+    gap: 10px;
+    transition: all 0.25s;
+}
+
+.filter__menu span{
+    width: 1px;
+    height: 90%;
+    background-color: aliceblue;
+}
+
+.filter__menu p, .filter__menu li {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Microsoft-Sans-Serif-Regular';
+    font-weight: 400;
+}
+
+.filter__menu div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter__menu div ul li {
+    cursor: pointer;
+    padding-top: 5px;
+}
+.filter__menu div ul li:hover{
+    color: #f8e901;
+}
+
+.menu__hide {
+    opacity: 0;
+    margin-top: -1500px;
+}
+.menu__show{
+    opacity: 1;
+    margin-top: 0;
+}
+.active__filter {
+    color: red !important;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .filter__wrapper {
+        justify-content: center;
+    }
+    .filter__menu{
+        flex-direction: column;
+        height: 950px;
+        align-items: center;
+        padding: 1em 0;
+        text-align: center;
+    }
+    .filter__menu span {
+        width: 60%;
+        height: 1px;
+    }
+}
