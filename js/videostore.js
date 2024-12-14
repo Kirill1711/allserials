@@ -1079,7 +1079,65 @@ function createfilterserials (arr) {//создадим страницу иско
         let a = document.createElement('a');//кнопка для перехода к просмотру
         a.innerHTML = 'Смотреть';
         switch (serial['title']) {
-            case 'Дюна: Пророчество': a.href = '../catalog/dune.html';//добавить
+            case 'Дюна: Пророчество': a.href = '../catalog/dune.html';
+            break;
+            case 'Звёздные Войны: Опорная Команда': a.href = '../catalog/star-wars.html';
+            break;
+            case 'Это всё Агата': a.href = '../catalog/agata.html';
+            break;
+            case 'HALO': a.href = '../catalog/halo.html';
+            break;
+            case 'Уокер': a.href = '../catalog/walker.html';
+            break;
+            case 'Калимба': a.href = '../catalog/kalimba.html';
+            break;
+            case 'Мосгаз. Дело №10: Метроном': a.href = '../catalog/mosgaz.html';
+            break;
+            case 'Ребус': a.href = '../catalog/rebus.html';
+            break;
+            case 'Милые обманщицы: Летняя школа': a.href = '../catalog/liers.html';
+            break;
+            case 'Месье Спейд': a.href = '../catalog/mesie.html';
+            break;
+            case 'Обреченные на славу': a.href = '../catalog/thosetodie.html';
+            break;
+            case 'Молодёжка. Новая смена': a.href = '../catalog/molodeshka.html';
+            break;
+            case 'Кресло': a.href = '../catalog/kreslo.html';
+            break;
+            case 'Мадам': a.href = '../catalog/madam.html';
+            break;
+            case 'Вне конкуренции': a.href = '../catalog/vne.html';
+            break;
+            case 'Основание: Осман': a.href = '../catalog/osman.html';
+            break;
+            case 'Большой дом': a.href = '../catalog/bighouse.html';
+            break;
+            case 'Франклин': a.href = '../catalog/franklin.html';
+            break;
+            case 'Сёгун': a.href = '../catalog/segyn.html';
+            break;
+            case 'Декамерон': a.href = '../catalog/decameron.html';
+            break;
+            case 'Дом дракона': a.href = '../catalog/houseofdragane.html';
+            break;
+            case 'Агенты времени': a.href = '../catalog/agents.html';
+            break;
+            case 'Призраки': a.href = '../catalog/ghosts.html';
+            break;
+            case 'Миротворец': a.href = '../catalog/mirotvorec.html';
+            break;
+            case 'Интервью с вампиром': a.href = '../catalog/vampire.html';
+            break;
+            case 'Зло': a.href = '../catalog/zlo.html';
+            break;
+            case 'Ходячие мертвецы: Выжившие': a.href = '../catalog/dead.html';
+            break;
+            case 'Калейдоскоп ужасов': a.href = '../catalog/horror.html';
+            break;
+            case 'Стэн против сил зла': a.href = '../catalog/stan.html';
+            break;
+            case 'Проклятый': a.href = '../catalog/curse.html';
             break;
 
         }
