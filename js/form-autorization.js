@@ -120,7 +120,7 @@ testuser.addEventListener('click', function() {
         auth = true;
 
         
-        creatusermenu('header__user', "../img/users/user.png", 'user', user[0].name, 'userexite', 'Выход', containerwidth);
+        creatusermenu('header__user', "./img/users/user.png", 'user', user[0].name, 'userexite', 'Выход', containerwidth);
 
         document.querySelector('.userexite').addEventListener('click', function() {
             window.location.reload();
